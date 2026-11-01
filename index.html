@@ -1,1 +1,53 @@
-!
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaporBumi - Transparansi & Aksi Lingkungan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">🌱 LaporBumi</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li><a href="pantau.html">Pantau Kondisi</a></li>
+        <li><a href="laporkan.html">Buat Laporan</a></li>
+        <li><a href="profil.html">Profil Tim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card" style="text-align: center; padding: 3rem 1.5rem;">
+      <h1 style="font-size: 2.2rem; margin-bottom: 1rem;">Bersama Jaga Kelestarian Lingkungan Sekitar</h1>
+      <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 1.5rem;">
+        Platform warga independen untuk melaporkan masalah lingkungan hidup secara terbuka, memantau tindakan nyata, dan wujudkan kawasan yang bersih & aman.
+      </p>
+      <a href="laporkan.html" class="btn">Laporkan Isu Sekarang</a>
+    </section>
+
+    <section class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+      <div class="card">
+        <h3>📍 Laporan Terverifikasi</h3>
+        <p style="font-size: 2rem; font-weight: bold; color: var(--primary);" id="total-reports">128</p>
+        <small style="color: var(--text-muted);">Masalah dilaporkan warga</small>
+      </div>
+      <div class="card">
+        <h3>✅ Terselesaikan</h3>
+        <p style="font-size: 2rem; font-weight: bold; color: var(--accent);" id="solved-reports">94</p>
+        <small style="color: var(--text-muted);">Tindakan sukses terlaksana</small>
+      </div>
+      <div class="card">
+        <h3>🛡️ Tingkat Respons</h3>
+        <p style="font-size: 2rem; font-weight: bold; color: var(--primary-dark);">84%</p>
+        <small style="color: var(--text-muted);">Transparansi penanganan</small>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
