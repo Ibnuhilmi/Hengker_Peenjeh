@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaporBumi - Buat Laporan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">🌱 LaporBumi</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="pantau.html">Pantau Kondisi</a></li>
+        <li><a href="laporkan.html" class="active">Buat Laporan</a></li>
+        <li><a href="profil.html">Profil Tim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="card" style="max-width: 600px; margin: 0 auto;">
+      <h2 style="margin-bottom: 1.5rem;">Formulir Pengaduan Lingkungan</h2>
+      <form id="reportForm">
+        <div class="form-group">
+          <label for="title">Judul Masalah</label>
+          <input type="text" id="title" placeholder="Contoh: Penumpukan Sampah Liar di Jl. Merdeka" required>
+        </div>
+        <div class="form-group">
+          <label for="category">Kategori Isu</label>
+          <select id="category" required>
+            <option value="Sampah & Kebersihan">Sampah & Kebersihan</option>
+            <option value="Saluran & Banjir">Saluran & Banjir</option>
+            <option value="Pencemaran Udara">Pencemaran Udara</option>
+            <option value="Fasilitas Taman">Fasilitas Taman</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="location">Lokasi Lengkap</label>
+          <input type="text" id="location" placeholder="Masukkan nama jalan / RT/RW" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Deskripsi Singkat</label>
+          <textarea id="description" rows="4" placeholder="Jelaskan secara jelas kendala lingkungan yang dialami..." required></textarea>
+        </div>
+        <button type="submit" class="btn" style="width: 100%;">Kirimkan Laporan</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
